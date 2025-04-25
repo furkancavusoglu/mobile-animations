@@ -64,15 +64,15 @@ your-spell-game/
 
 ### 4.2. Path Processing Pipeline
 
-1.  **Capture Points:** Store raw points from gesture events. Manage multiple strokes if the user lifts their finger. Handle simultaneous paths for multi-touch.
-2.  **Simplify Path:** Use algorithms like Ramer-Douglas-Peucker (`simplify-js`) to reduce noise and irrelevant points while preserving shape.
-3.  **Feature Extraction:** Analyze the simplified path(s) to calculate:
-    - **Basic Metrics:** Total length, bounding box (size, aspect ratio), duration, average/peak speed.
-    - **Shape Properties:** Number of corners/vertices, average/max curvature, self-intersections.
-    - **Stroke Properties:** Number of strokes, start/end points per stroke.
-    - **Retracing Detection:** Identify and quantify segments drawn over previous parts of the _same_ stroke.
-    - **Multi-Touch Features:** Number of active pointers, distance/relation between simultaneous paths.
-4.  **Shape Recognition (Optional):** Use algorithms like `$1` or `$N` recognizer to classify the drawing into predefined basic shapes or symbols (line, circle, triangle, etc.).
+1. **Capture Points:** Store raw points from gesture events. Manage multiple strokes if the user lifts their finger. Handle simultaneous paths for multi-touch.
+2. **Simplify Path:** Use algorithms like Ramer-Douglas-Peucker (`simplify-js`) to reduce noise and irrelevant points while preserving shape.
+3. **Feature Extraction:** Analyze the simplified path(s) to calculate:
+   - **Basic Metrics:** Total length, bounding box (size, aspect ratio), duration, average/peak speed.
+   - **Shape Properties:** Number of corners/vertices, average/max curvature, self-intersections.
+   - **Stroke Properties:** Number of strokes, start/end points per stroke.
+   - **Retracing Detection:** Identify and quantify segments drawn over previous parts of the _same_ stroke.
+   - **Multi-Touch Features:** Number of active pointers, distance/relation between simultaneous paths.
+4. **Shape Recognition (Optional):** Use algorithms like `$1` or `$N` recognizer to classify the drawing into predefined basic shapes or symbols (line, circle, triangle, etc.).
 
 ### 4.3. Input Variations & Detection
 
