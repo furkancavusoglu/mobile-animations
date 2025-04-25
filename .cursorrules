@@ -1,0 +1,115 @@
+{
+  "expertise": "TypeScript, React Native, Expo, and Mobile UI development",
+  "guidelines": {
+    "codeStyle": {
+      "description": "Write concise, technical TypeScript code with accurate examples",
+      "patterns": [
+        "Use functional and declarative programming patterns; avoid classes",
+        "Prefer iteration and modularization over code duplication",
+        "Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError)",
+        "Structure files: exported component, subcomponents, helpers, static content, types"
+      ],
+      "documentation": "https://docs.expo.dev/"
+    },
+    "namingConventions": {
+      "directoryFormat": "lowercase-with-dashes",
+      "exportStyle": "named exports"
+    },
+    "typescript": {
+      "usage": "all code",
+      "preferences": [
+        "prefer interfaces over types",
+        "avoid enums; use maps instead",
+        "use functional components with TypeScript interfaces",
+        "use strict mode for better type safety"
+      ]
+    },
+    "syntax": {
+      "functions": "use 'function' keyword for pure functions",
+      "conditionals": "avoid unnecessary curly braces; use concise syntax",
+      "jsx": "use declarative JSX",
+      "formatting": "use Prettier"
+    },
+    "ui": {
+      "components": "use Expo's built-in components",
+      "layout": "implement responsive design with Flexbox",
+      "styling": [
+        "use styled-components or Tailwind CSS",
+        "implement dark mode support",
+        "ensure high accessibility standards"
+      ],
+      "animations": "use react-native-reanimated and react-native-gesture-handler"
+    },
+    "safeArea": {
+      "provider": "use SafeAreaProvider",
+      "components": [
+        "wrap top-level components with SafeAreaView",
+        "use SafeAreaScrollView for scrollable content"
+      ],
+      "guidelines": "avoid hardcoding padding or margins"
+    },
+    "performance": {
+      "stateManagement": "minimize useState and useEffect; prefer context and reducers",
+      "optimization": [
+        "use Expo's AppLoading and SplashScreen",
+        "optimize images with WebP format",
+        "implement code splitting and lazy loading"
+      ],
+      "monitoring": "use React Native's built-in tools and Expo's debugging features"
+    },
+    "navigation": {
+      "library": "use react-navigation",
+      "features": [
+        "deep linking",
+        "universal links",
+        "dynamic routes with expo-router"
+      ]
+    },
+    "stateManagement": {
+      "primary": "use React Context and useReducer",
+      "dataFetching": "use react-query",
+      "complexState": "consider Zustand or Redux Toolkit"
+    },
+    "errorHandling": {
+      "validation": "use Zod",
+      "logging": "use Sentry",
+      "patterns": [
+        "handle errors at the beginning of functions",
+        "use early returns",
+        "avoid unnecessary else statements",
+        "implement global error boundaries"
+      ]
+    },
+    "testing": {
+      "unitTests": "use Jest and React Native Testing Library",
+      "integrationTests": "use Detox",
+      "tools": "use Expo's testing tools"
+    },
+    "security": {
+      "inputSanitization": "prevent XSS attacks",
+      "storage": "use react-native-encrypted-storage",
+      "communication": "use HTTPS",
+      "guidelines": "https://docs.expo.dev/guides/security/"
+    },
+    "internationalization": {
+      "libraries": [
+        "react-native-i18n",
+        "expo-localization"
+      ],
+      "features": [
+        "multiple languages",
+        "RTL layouts",
+        "text scaling"
+      ]
+    },
+    "keyConventions": [
+      "Rely on Expo's managed workflow",
+      "Prioritize Mobile Web Vitals",
+      "Use expo-constants",
+      "Use expo-permissions",
+      "Implement expo-updates",
+      "Follow Expo's deployment best practices",
+      "Ensure cross-platform compatibility"
+    ]
+  }
+}
